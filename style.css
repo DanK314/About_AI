@@ -1,0 +1,90 @@
+@keyframes ColorChange {
+    0%{
+        background-color: #DDDDFF;
+    }
+    16%{
+        background-color: #DDFFDD;
+    }
+    32%{
+        background-color: #FFDDDD;
+    }
+    48%{
+        background-color: #FFDDFF;
+    }
+    66%{
+        background-color: #DDFFFF;
+    }
+    84%{
+        background-color: #FFFFDD
+    }
+    100%{
+        background-color: #DDDDFF;
+    }
+}
+@keyframes ShowPicture {
+    0%{
+        width: 60%;
+        opacity: 0%;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.0);
+    }
+    100%{
+        width: 90%;
+        opacity: 100%
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+@font-face {
+    font-family: 'ManggoBoardLight';
+    src: url('font.woff2') format('woff2');
+}
+*{
+    font-family: 'ManggoBoardLight';
+}
+body{
+    animation-name: ColorChange;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    background-color: #d1edff;
+}
+header{
+    text-align: center;
+    background-color: #78acff;
+    margin: 0px;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 5px;
+}
+.centerAlign {
+    text-align: center;
+}
+.showPicture {
+    animation-name: ShowPicture;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+img{
+    margin: 10px;
+}
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.cursor-active {
+  transform: scale(1.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+h1{
+    font-size: 60px;
+}
