@@ -29,7 +29,7 @@
     }
     100%{
         width: 90%;
-        opacity: 100%
+        opacity: 100%;
         box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
     }
 }
@@ -87,4 +87,15 @@ img{
 }
 h1{
     font-size: 60px;
+}
+h1 .footerTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
 }
